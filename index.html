@@ -44,7 +44,6 @@
                */
 
               $().UItoTop({ easingType: 'easeOutQuart' });
-
           });
       </script>
       <style>
@@ -55,12 +54,95 @@
               background-repeat: no-repeat;
               background-size: cover;
           }
+
+          .to_catalog {
+              margin: 100px auto;
+              width: 50%;
+              border: 2px solid skyblue;
+              line-height: 3;
+              text-align: center;
+              transition-property: border-radius, background, color;
+              transition-delay: .01s, 0s, 0s;
+              transition-duration: .5s, .2s, .2s;
+          }
+
+          .to_catalog:active {
+              border-radius: 5em;
+              background: skyblue;
+              color: white;
+          }
       </style>
+
+      <style>
+          /* Center the loader */
+          #loader {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              z-index: 1;
+              width: 150px;
+              height: 150px;
+              margin: -75px 0 0 -75px;
+              border: 16px solid #f3f3f3;
+              border-radius: 50%;
+              border-top: 16px solid #ff539e;
+              width: 120px;
+              height: 120px;
+              -webkit-animation: spin 1s linear infinite;
+              animation: spin 1.5s linear infinite;
+          }
+
+          @-webkit-keyframes spin {
+              0% { -webkit-transform: rotate(0deg); }
+              100% { -webkit-transform: rotate(360deg); }
+          }
+
+          @keyframes spin {
+              0% { transform: rotate(0deg); }
+              100% { transform: rotate(360deg); }
+          }
+
+          /* Add animation to "page content" */
+          .animate-bottom {
+              -webkit-animation-name: animatebottom;
+              -webkit-animation-duration: 1s;
+              animation-name: animatebottom;
+              animation-duration: 1s
+          }
+
+          @-webkit-keyframes animatebottom {
+              from { bottom:-100px; opacity:0 }
+              to { bottom:0px; opacity:1 }
+          }
+
+          @keyframes animatebottom {
+              from{ bottom:-100px; opacity:0 }
+              to{ bottom:0; opacity:1 }
+          }
+
+          #myDiv {
+              display: none;
+              text-align: center;
+          }
+      </style>
+      <script>
+          var myVar;
+
+          function myFunction() {
+              myVar = setTimeout(showPage, 1000);
+          }
+
+          function showPage() {
+              document.getElementById("loader").style.display = "none";
+              document.getElementById("myDiv").style.display = "block";
+          }
+      </script>
   </head>
-  <body>
 
+  <body onload="myFunction()" style="margin:0;">
+  <div id="loader"></div>
 <!--NAVIGATION-->
-
+<div style="display:none;" id="myDiv" class="animate-bottom">
 <div id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -70,7 +152,7 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a href="#" class="navbar-brand">КОМОДИК.БЕЛ</a>
+            <a href="index.html" class="navbar-brand">КОМОДИК.БЕЛ</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -92,15 +174,16 @@
  <div id="header" class="header parallax" >
      <div class="container">
          <div class="row">
-             <div class="col-lg-6 col-md-6 hidden-xs wow zoomIn">
+             <div class="col-lg-12 col-md-12 hidden-xs wow zoomIn">
                  <h1>КОМОДИК.БЕЛ</h1>
                  <h5>Давно мечтали о комодике для косметики? Мы поможем вам приблизиться к своей мечте. Все, что для этого нужно - перейти в наш каталог комодиков, выбрать приглянувшийся и позвонить нам для согласования цвета комодика вашей мечты!</h5>
                  <!--<button class="btn btn-lg btn-primary">
                      <a href="#services" style="color:white"> Преимущества</a>
                  </button>-->
-                 <button class="col-xs-10 btn btn-lg btn-success">
-                     <a href="#pricing" style="color:white"> Каталог</a>
-                 </button>
+
+                 <p class="to_catalog ">
+                     <a href="#pricing">Перейти в каталог</a>
+                 </p>
              </div>
 
              <div class="col-xs-12 visible-xs wow zoomIn">
@@ -110,9 +193,9 @@
                  <!--<button class="btn btn-lg btn-primary">
                      <a href="#services" style="color:white"> Преимущества</a>
                  </button>-->
-                 <button class="col-xs-10 btn btn-lg btn-success">
-                     <a href="#pricing" style="color:white"> Каталог</a>
-                 </button>
+                 <p class="to_catalog btn-lg">
+                     <a href="#pricing">Перейти в каталог</a>
+                 </p>
              </div>
              <!--
              <div class="col-lg-6 col-md-6 wow bounceInRight">
@@ -131,17 +214,17 @@
          <h2 class="wow fadeInUp">Преимущества</h2>
          <p class="wow fadeInUp" data-wow-delay="0.4">Основные плюсы нашей продукции</p>
          <div class="row">
-             <div class="col-lg-4 col-md-4 wow zoomIn" data-wow-delay="0.5s">
+             <div class="col-lg-4 col-md-4 wow zoomIn" data-wow-delay="1.5s">
                  <i class="fa fa-desktop" aria-hidden="true"></i>
                  <h4>Быстро</h4>
                  <p>Наши мастера сделают выбранный вами комодик или гримерное зеркальце всего за 2-3 дня! Позвоните нам и скажите какой цвет изделия вы бы хотели.</p>
              </div>
-             <div class="col-lg-4 col-md-4 wow zoomIn" data-wow-delay="0.6s">
+             <div class="col-lg-4 col-md-4 wow zoomIn" data-wow-delay="1.6s">
                  <i class="fa fa-mobile" aria-hidden="true"></i>
                  <h4>Качественно</h4>
                  <p>Мы - плотники с многолетним опытом работы. Вы сами удивитесь насколько качественным может быть предмет интерьера!</p>
              </div>
-             <div class="col-lg-4 col-md-4 wow zoomIn" data-wow-delay="0.7s">
+             <div class="col-lg-4 col-md-4 wow zoomIn" data-wow-delay="1.7s">
                  <i class="fa fa-university" aria-hidden="true"></i>
                   <h4>Бесплатная доставка по Минску</h4>
                  <p>Вся наша продукция доставляется клиенту по г. Минску бесплатно!</p>
@@ -418,5 +501,6 @@
          </div>
      </div>
  </div>
+    </div>
   </body>
 </html>
