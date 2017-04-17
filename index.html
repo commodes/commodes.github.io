@@ -23,9 +23,6 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
       <script src="js/wow.min.js"></script>
-      <script>
-          new WOW().init();
-      </script>
       <script src="js/bootstrap.min.js"></script>
       <!-- easing plugin ( optional ) -->
       <script src="js/easing.js" type="text/javascript"></script>
@@ -135,6 +132,7 @@
           function showPage() {
               document.getElementById("loader").style.display = "none";
               document.getElementById("myDiv").style.display = "block";
+              new WOW().init();
           }
       </script>
   </head>
@@ -214,17 +212,17 @@
          <h2 class="wow fadeInUp">Преимущества</h2>
          <p class="wow fadeInUp" data-wow-delay="0.4">Основные плюсы нашей продукции</p>
          <div class="row">
-             <div class="col-lg-4 col-md-4 wow zoomIn" data-wow-delay="1.5s">
+             <div class="col-lg-4 col-md-4 wow zoomIn" data-wow-delay="0.8s">
                  <i class="fa fa-desktop" aria-hidden="true"></i>
                  <h4>Быстро</h4>
                  <p>Наши мастера сделают выбранный вами комодик или гримерное зеркальце всего за 2-3 дня! Позвоните нам и скажите какой цвет изделия вы бы хотели.</p>
              </div>
-             <div class="col-lg-4 col-md-4 wow zoomIn" data-wow-delay="1.6s">
+             <div class="col-lg-4 col-md-4 wow zoomIn" data-wow-delay="0.9s">
                  <i class="fa fa-mobile" aria-hidden="true"></i>
                  <h4>Качественно</h4>
                  <p>Мы - плотники с многолетним опытом работы. Вы сами удивитесь насколько качественным может быть предмет интерьера!</p>
              </div>
-             <div class="col-lg-4 col-md-4 wow zoomIn" data-wow-delay="1.7s">
+             <div class="col-lg-4 col-md-4 wow zoomIn" data-wow-delay="1s">
                  <i class="fa fa-university" aria-hidden="true"></i>
                   <h4>Бесплатная доставка по Минску</h4>
                  <p>Вся наша продукция доставляется клиенту по г. Минску бесплатно!</p>
@@ -242,7 +240,7 @@
         <div class="row">
             <h2 class="wow fadeInUp">Каталог</h2>
             <p class="wow fadeInUp" data-wow-delay="0.4">Представляем вашему вниманию наши комодики и гримерные зеркальца.</p>
-            <div class="col-lg-4 col-md-4 hidden-xs wow zoomIn" data-wow-delay="1s">
+            <div class="col-lg-4 col-md-4 hidden-xs wow zoomIn" data-wow-delay="0.8s">
                 <div class="packages">
                     <h4>Соло</h4>
                     <img src="images/solo.jpeg" width="200" height="200">
@@ -252,7 +250,7 @@
                     <!--<button class="btn btn-success">Подробнее</button>-->
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 hidden-xs wow zoomIn" data-wow-delay="1s">
+            <div class="col-lg-4 col-md-4 hidden-xs wow zoomIn" data-wow-delay="0.9s">
                 <div class="packages">
                     <h4>Дуэт</h4>
                     <img src="images/duet.jpeg" width="200" height="200">
@@ -272,32 +270,32 @@
                     <!--<button class="btn btn-success">Подробнее</button>-->
                 </div>
             </div>
-            <div class="col-lg-6 col-md-6 hidden-xs wow zoomIn" data-wow-delay="1s">
-                <div class="packages">
-                    <h4>Гримерное зеркало "Круглое"</h4>
-                    <img src="images/krugloe.jpeg" width="200" height="200">
-                    <h1>230 BYN</h1>
-                    <b>Описание</b>
-                    <p>Светодиодные LED лампочки</p>
-                    <p>Размеры: 60 см (диаметр)</p>
-                    <!--<button class="btn btn-success">Подробнее</button>-->
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 hidden-xs wow zoomIn" data-wow-delay="1s">
+            <div class="col-lg-6 col-md-6 hidden-xs wow zoomIn" data-wow-delay="0.9s">
                 <div class="packages">
                     <h4>Гримерное зеркало "Квадратное"</h4>
-                    <img src="images/kvadratnoje.jpeg" width="200" height="200">
-                    <h1>280 BYN</h1>
+                    <img src="images/krugloe.jpeg" width="200" height="200">
+                    <h1>230 BYN</h1>
                     <b>Описание</b>
                     <p>Светодиодные LED лампочки</p>
                     <p>Размеры: 60x80 см</p>
                     <!--<button class="btn btn-success">Подробнее</button>-->
                 </div>
             </div>
+            <div class="col-lg-6 col-md-6 hidden-xs wow zoomIn" data-wow-delay="1s">
+                <div class="packages">
+                    <h4>Гримерное зеркало "Круглое"</h4>
+                    <img src="images/kvadratnoje.jpeg" width="200" height="200">
+                    <h1>280 BYN</h1>
+                    <b>Описание</b>
+                    <p>Светодиодные LED лампочки</p>
+                    <p>Размеры: 60 см (диаметр)</p>
+                    <!--<button class="btn btn-success">Подробнее</button>-->
+                </div>
+            </div>
 
 
 <!--MOBILE PHONES-->
-            <div class="col-xs-12 visible-xs wow" data-wow-delay="0.4s">
+            <div class="col-xs-12 visible-xs ">
                 <div class="packages">
                     <h4>Соло</h4>
                     <img src="images/solo.jpeg" width="150" height="150">
@@ -307,7 +305,7 @@
                     <!--<button class="btn btn-success">Подробнее</button>-->
                 </div>
             </div>
-            <div class="col-xs-12 visible-xs wow" data-wow-delay="0.4s">
+            <div class="col-xs-12 visible-xs ">
                 <div class="packages">
                     <h4>Дуэт</h4>
                     <img src="images/duet.jpeg" width="150" height="150">
@@ -317,7 +315,7 @@
                     <!--<button class="btn btn-success">Подробнее</button>-->
                 </div>
             </div>
-            <div class="col-xs-12 visible-xs wow" data-wow-delay="0.4s">
+            <div class="col-xs-12 visible-xs ">
                 <div class="packages">
                     <h4>Трио</h4>
                     <img src="images/trio.jpeg" width="150" height="150">
@@ -327,10 +325,10 @@
                     <!--<button class="btn btn-success">Подробнее</button>-->
                 </div>
             </div>
-            <div class="col-xs-12  visible-xs wow" data-wow-delay="0.4s">
+            <div class="col-xs-12 visible-xs ">
                 <div class="packages">
-                    <h4>Гримерное зеркало "Круглое"</h4>
-                    <img src="images/krugloe.jpeg" width="150" height="150">
+                    <h4>Гримерное зеркало "Квадратное"</h4>
+                    <img src="images/krugloe.jpeg" width="200" height="200">
                     <h1>230 BYN</h1>
                     <b>Описание</b>
                     <p>Светодиодные LED лампочки</p>
@@ -338,10 +336,10 @@
                     <!--<button class="btn btn-success">Подробнее</button>-->
                 </div>
             </div>
-            <div class="col-xs-12 visible-xs wow" data-wow-delay="0.4s">
+            <div class="col-xs-12 visible-xs ">
                 <div class="packages">
-                    <h4>Гримерное зеркало "Квадратное"</h4>
-                    <img src="images/kvadratnoje.jpeg" width="150" height="150">
+                    <h4>Гримерное зеркало "Круглое"</h4>
+                    <img src="images/kvadratnoje.jpeg" width="200" height="200">
                     <h1>280 BYN</h1>
                     <b>Описание</b>
                     <p>Светодиодные LED лампочки</p>
