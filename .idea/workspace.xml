@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa01e671-0b80-4ef2-b45d-00f0948cbd5b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="commodes.github.io.iws" />
@@ -27,8 +28,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41947564">
-              <caret line="479" column="43" selection-start-line="479" selection-start-column="43" selection-end-line="479" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.5505618">
+              <caret line="250" column="22" selection-start-line="250" selection-start-column="22" selection-end-line="250" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -171,6 +172,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -219,7 +221,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -430,7 +431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="204" column="9" selection-start-line="204" selection-start-column="4" selection-end-line="204" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -505,7 +505,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="204" column="9" selection-start-line="204" selection-start-column="4" selection-end-line="204" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -524,7 +523,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="12312" selection-start-line="3" selection-start-column="12312" selection-end-line="3" selection-end-column="12312" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -543,7 +541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="12312" selection-start-line="3" selection-start-column="12312" selection-end-line="3" selection-end-column="12312" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -611,7 +608,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="204" column="9" selection-start-line="204" selection-start-column="4" selection-end-line="204" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -619,14 +615,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1857" column="29" selection-start-line="1857" selection-start-column="29" selection-end-line="1857" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41947564">
-          <caret line="479" column="43" selection-start-line="479" selection-start-column="43" selection-end-line="479" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.5505618">
+          <caret line="250" column="22" selection-start-line="250" selection-start-column="22" selection-end-line="250" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
