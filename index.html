@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.min.css">
+      <link rel="stylesheet" href="css/media.css">
+      <link rel="stylesheet" href="css/main.css">
        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -29,6 +31,7 @@
       <!-- UItoTop plugin -->
       <script src="js/jquery.ui.totop.js" type="text/javascript"></script>
       <!-- Starting the plugin -->
+      <script src="js/common.js" type="text/javascript"></script>
       <script type="text/javascript">
           $(document).ready(function() {
               /*
@@ -141,7 +144,69 @@
   <div id="loader"></div>
 <!--NAVIGATION-->
 <div style="display:none;" id="myDiv" class="animate-bottom">
-<div id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <header class="parallax">
+        <div id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a href="index.html" class="navbar-brand">КОМОДИК.БЕЛ</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#header">Главная</a></li>
+                        <li><a href="#services">Преимущества</a></li>
+                        <li><a href="#pricing">Каталог</a></li>
+                        <!--<li><a href="#team">team</a></li>
+                        <li><a href="#client">clients</a></li>
+                        <li><a href="#contact">contact</a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 hidden-xs wow zoomIn">
+                    <div class="title_block">
+                        <h1>КОМОДИК.БЕЛ</h1>
+                        <h2>Давно мечтали о комодике для косметики? </h2>
+                            <h3>Мы поможем вам приблизиться к своей мечте!</h3>
+                        <h4>Все, что для этого нужно - перейти в наш каталог комодиков, выбрать приглянувшийся и позвонить нам для согласования цвета комодика вашей мечты!</h4>
+                        <!--<button class="btn btn-lg btn-primary">
+                            <a href="#services" style="color:white"> Преимущества</a>
+                        </button>-->
+                        <button class="my_btn btn_md"><a href="#pricing" style="color: white">Каталог</a> </button>
+<!--
+                        <p class="to_catalog btn" style="color: white;">
+                            <a href="#pricing">Перейти в каталог</a>
+                        </p>-->
+                    </div>
+                </div>
+
+                <div class="col-xs-12 visible-xs wow zoomIn">
+                    <div class="title_block">
+                        <h2>КОМОДИК.БЕЛ</h2>
+                        <h3>Давно мечтали о комодике для косметики? </h3>
+                        <h4>Мы поможем вам приблизиться к своей мечте!</h4>
+                        <h5>Все, что для этого нужно - перейти в наш каталог комодиков, выбрать приглянувшийся и позвонить нам для согласования цвета комодика вашей мечты!</h5>
+                        <!--<button class="btn btn-lg btn-primary">
+                            <a href="#services" style="color:white"> Преимущества</a>
+                        </button>-->
+                        <button class="my_btn btn_md"><a href="#pricing" style="color: white">Каталог</a> </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+<!--
+    <div id="myNavbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -157,51 +222,19 @@
                 <li><a href="#header">Главная</a></li>
                 <li><a href="#services">Преимущества</a></li>
                 <li><a href="#pricing">Каталог</a></li>
-                <!--<li><a href="#team">team</a></li>
+                <li><a href="#team">team</a></li>
                 <li><a href="#client">clients</a></li>
-                <li><a href="#contact">contact</a></li>-->
+                <li><a href="#contact">contact</a></li>
             </ul>
         </div>
     </div>
 </div>
-
+-->
 <!--- End Navigation ---->
 
 <!--- Header ---->
+<!--
 
- <div id="header" class="header parallax" >
-     <div class="container">
-         <div class="row">
-             <div class="col-lg-12 col-md-12 hidden-xs wow zoomIn">
-                 <h1>КОМОДИК.БЕЛ</h1>
-                 <h5>Давно мечтали о комодике для косметики? Мы поможем вам приблизиться к своей мечте. Все, что для этого нужно - перейти в наш каталог комодиков, выбрать приглянувшийся и позвонить нам для согласования цвета комодика вашей мечты!</h5>
-                 <!--<button class="btn btn-lg btn-primary">
-                     <a href="#services" style="color:white"> Преимущества</a>
-                 </button>-->
-
-                 <p class="to_catalog ">
-                     <a href="#pricing">Перейти в каталог</a>
-                 </p>
-             </div>
-
-             <div class="col-xs-12 visible-xs wow zoomIn">
-                 <h1>КОМОДИК.БЕЛ</h1>
-                 <h5>Давно мечтали о комодике для косметики? </h5>
-                 <h6>Мы поможем вам приблизиться к своей мечте. Все, что для этого нужно - перейти в наш каталог комодиков, выбрать приглянувшийся и позвонить нам для согласования цвета комодика вашей мечты!</h6>
-                 <!--<button class="btn btn-lg btn-primary">
-                     <a href="#services" style="color:white"> Преимущества</a>
-                 </button>-->
-                 <p class="to_catalog btn-lg">
-                     <a href="#pricing">Перейти в каталог</a>
-                 </p>
-             </div>
-             <!--
-             <div class="col-lg-6 col-md-6 wow bounceInRight">
-                 <img src="images/Responsive-Web-Design.png" alt="">
-             </div>-->
-         </div>
-     </div>
- </div>
 
 <!---- End Header ---->
 
@@ -209,7 +242,7 @@
 
  <div id="services" class="services">
      <div class="container">
-         <h2 class="wow fadeInUp">Преимущества</h2>
+         <h2 class="wow fadeInUp">Наши преимущества</h2>
          <p class="wow fadeInUp" data-wow-delay="0.4">Основные плюсы нашей продукции</p>
          <div class="row">
              <div class="col-lg-4 col-md-4 wow zoomIn" data-wow-delay="0.8s">
@@ -468,37 +501,58 @@
 
  <!---- Footer ---->
 
- <div id="footer" class="footer">
-     <div class="container">
-         <div class="row">
-             <div class="col-lg-4 col-md-4">
-                 <h4 class="wow ">Контакты</h4>
-                 <!--<p><i class="fa fa-home" aria-hidden="true"></i> 111 Main Street, Washington DC, 22222</p>-->
-                 <p><i class="wow  fa fa-envelope" aria-hidden="true"></i> commodesby@gmail.com</p>
-                 <p><i class="wow  fa fa-phone" aria-hidden="true"></i> +375 29 323-67-27</p>
-                 <p><i class="wow  fa fa-phone" aria-hidden="true"></i> +375 33 341-83-83</p>
-                 <p><i class="wow  fa fa-globe" aria-hidden="true"></i> КОМОДИК.БЕЛ</p>
-             </div>
-             <!--
-             <div class="col-lg-4 col-md-4">
-                 <h4>About</h4>
-                 <p><i class="fa fa-square-o" aria-hidden="true"></i> About Us</p>
-                 <p><i class="fa fa-square-o" aria-hidden="true"></i> Privacy</p>
-                 <p><i class="fa fa-square-o" aria-hidden="true"></i> Term & Condition</p>
-             </div>
-             <div class="col-lg-4 col-md-4">
-                 <h4>Stay in touch</h4>
-                 <i class="social fa fa-facebook" aria-hidden="true"></i>
-                 <i class="social fa fa-twitter" aria-hidden="true"></i>
-                <i class="social fa fa-linkedin" aria-hidden="true"></i>
-                <i class="social fa fa-pinterest" aria-hidden="true"></i>
-                <i class="social fa fa-youtube" aria-hidden="true"></i>
-                <i class="social fa fa-github" aria-hidden="true"></i><br>
-                <input type="email" placeholder="Subscribe For Updates"><button class="btn btn-success">Subscribe</button>
-             </div>-->
-         </div>
-     </div>
- </div>
-    </div>
+
+    <footer>
+        <div id="footer" class="footer main_footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="footer_item" style="color: white">
+                            <h4 class="wow ">Контакты</h4>
+                            <p style="color: white"><i class="wow  fa fa-envelope" aria-hidden="true"></i> commodesby@gmail.com</p>
+                            <p style="color: white"><i class="wow  fa fa-phone" aria-hidden="true"></i> +375 29 323-67-27</p>
+                            <p style="color: white"><i class="wow  fa fa-phone" aria-hidden="true"></i> +375 33 341-83-83</p>
+                            <p style="color: white"><i class="wow  fa fa-globe" aria-hidden="true"></i> КОМОДИК.БЕЛ</p>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="col-md-4 col-sm-6">
+                        <div class="footer_item">
+                            <h5>location</h5>
+                            <button class="soc_btn_white">
+                                <i class="fa fa-facebook"></i>
+                            </button>
+                            <button class="soc_btn_white">
+                                <i class="fa fa-twitter"></i>
+                            </button>
+                            <button class="soc_btn_white">
+                                <i class="fa fa-linkedin-square"></i>
+                            </button>
+                        </div>
+                    </div>-->
+                    <!--<div class="col-md-4 hidden-xs hidden-sm">
+                        <div class="footer_item">
+                            <h5>location</h5>
+                            <p>Lorem ipsum dolor sit <br> amet, consectetur adipisicing.</p>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright_block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        <div class="copy_txt">
+                            КОМОДИК.БЕЛ | Все права защищены © 2017
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
   </body>
 </html>
